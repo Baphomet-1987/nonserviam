@@ -2,4 +2,8 @@ echo -e "\e[1mfullupdate \e[0m- \e[4mrefreshes keyring, system update, orphan re
 
 \e[1msweep \e[0m- \e[4mremoves orphans and leftovers\e[0m
 
-\e[1mpiavpn \e[0m- \e[4mconnects to pia server via OpenVPN framework\e[0m"
+\e[1mpiavpn \e[0m- \e[4mconnects to pia server via OpenVPN framework\e[0m
+
+\e[1mshows \e[0m- \e[4mcd into and ls series directory\e[0m
+
+\e[1mmovies \e[0m- \e[4mcd into and ls movie directory\e[0m"
