@@ -1,0 +1,17 @@
+sudo pacman -S base-devel xorg-xinit dialog xdg-user-dirs nvidia mesa intel vulkan-intel firefox gparted pavucontrol compton steam conky urxvt thunar tumbler mousepad coreutils viewnior mpv ntfs-3g
+xdg-user-dirs-update
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si 
+yay -S i3lock-fancy screenfetch xarchiver deluge freetype2-infinality-remix htop-solarized blueman-applet bluez-utils-compat bluez bluez-utils retroarch pulseaudio-alsa wine winetricks setuptools itch-setup
+sudo systemctl enable bluetooth.service
+ln -sv "~/.dotfiles/i3/config? ~/.config/i3/
+ls -sv "~/.dotfiles/i3status/config" ~/.config/i3status/
+ls -sv "~/.dotfiles/.bash_profile" ~
+ls -sv "~/.dotfiles/.bashrc" ~
+ls -sv "~/.dotfiles/.conkyrc" ~
+ls -sv "~/.dotfiles/.nanorc" ~
+ls -sv "~/.dotfiles/.nvidia-settings-rc" ~
+ls -sv "~/.dotflies/.xinitrc" ~
+ls -sv "~/.dotfiles/Xresources" ~
+

@@ -1,0 +1,42 @@
+general {
+        output_format = "i3bar"
+	colors = true
+	interval = 1
+	color_good = "#BBBBBB"
+	color_bad = "#CC1616"
+	color_degraded = "#55858E"
+}
+
+order += "volume master"
+#order += "backlight"
+order += "cpu_temperature 0"
+order += "path_exists VPN"
+order += "tztime local"
+
+volume master {
+                   format = "♪: %volume"
+                   format_muted = "♪: muted (%volume)"
+                   device = "default"
+                   mixer = "Master"
+                   mixer_idx = 0
+}
+
+#backlight {
+#	format = "☼:%level"
+#	path = "/sys/class/backlight/intel_backlight/brightness"
+#	cache_timeout = 30
+#}
+
+cpu_temperature 0 {
+        format = "T: %degrees °C"
+#        path = "/sys/devices/platform/coretemp.0/temp1_input"
+}
+
+path_exists VPN {
+        # path exists when a VPN tunnel launched by nmcli/nm-applet is active
+        path = "/proc/sys/net/ipv4/conf/tun0"
+}
+
+tztime local {
+        format = "%Y-%m-%d | %H:%M:%S"
+}
