@@ -1,0 +1,5 @@
+echo -e "\e[1mfullupdate \e[0m- \e[4mrefreshes keyring, system update, orphan removal\e[0m
+
+\e[1msweep \e[0m- \e[4mremoves orphans and leftovers\e[0m
+
+\e[1mpiavpn \e[0m- \e[4mconnects to pia server via OpenVPN framework\e[0m"
