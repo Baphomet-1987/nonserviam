@@ -1,0 +1,16 @@
+The following files are specific to my hardware and programs
+and therefore serve no purpose to anyone else except to show 
+how incredibly poor my organizational skills are and damning
+proof that I steal code more often than I put it together 
+myself.
+
+.Xresources
+.xinitrc
+.nvidia-settings-rc
+.bash_profile
+.bashrc
+.bais
+
+DO NOT clone and run .bais - that is my install script. You'd 
+be chasing symlinks and a whole pile of installs, better to
+just leave it be.
