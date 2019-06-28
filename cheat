@@ -6,4 +6,10 @@ echo -e "\e[1mfullupdate \e[0m- \e[4mrefreshes keyring, system update, orphan re
 
 \e[1mshows \e[0m- \e[4mcd into and ls series directory\e[0m
 
-\e[1mmovies \e[0m- \e[4mcd into and ls movie directory\e[0m"
+\e[1mmovies \e[0m- \e[4mcd into and ls movie directory\e[0m
+
+\e[1mgit add (file name) \e[0m- \e[4madd file for commit\e[0m
+
+\e[1mgit commit -m 'ver# - change summary' \e[0m- \e[4mset commit version and change note\e[0m
+
+\e[1mgit push origin master \e[0m- \e[4mpush commit to master branch\e[0m"
