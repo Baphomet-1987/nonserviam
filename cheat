@@ -12,4 +12,6 @@ echo -e "\e[1mfullupdate \e[0m- \e[4mrefreshes keyring, system update, orphan re
 
 \e[1mgit commit -m 'ver# - change summary' \e[0m- \e[4mset commit version and change note\e[0m
 
-\e[1mgit push origin master \e[0m- \e[4mpush commit to master branch\e[0m"
+\e[1mgit push origin master \e[0m- \e[4mpush commit to master branch\e[0m
+
+\e[1mln -s /real/path/ /symlink/path/ \e[0m- \e[4msymlink - links first path to the second"

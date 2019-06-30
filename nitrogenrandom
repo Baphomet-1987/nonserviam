@@ -1,0 +1,10 @@
+#!/bin/bash
+# Calls nitrogen to randomly select a new wallpaper every
+# 10 minutes without the need for GUI. 
+# Written for i3wm by Baphomet, Junius XXX, MMXIX
+
+while true
+do
+	nitrogen --random --set-zoom-fill /home/caddy.ssd/Pictures/Wallpapers/
+	sleep 600
+done

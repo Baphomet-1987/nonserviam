@@ -99,6 +99,8 @@ alias sweep="sudo pacman -Rsn $(pacman -Qdtq)"
 alias piavpn="sudo openvpn --config ~/Downloads/PIAovpn/Norway.ovpn"
 alias ucytopia="git clone https://github.com/JimmySnails/Cytopia && cd Cytopia && cmake . && make"
 alias fullupdate="sudo pacman -S archlinux-keyring && sudo pacman -Syyu --verbose && sudo pacman -Rsn $(pacman -Qdtq)"
+alias wifi="sudo wifi-menu"
+alias ripsong="youtube-dl -x --audio-format"
 
 xhost +local:root > /dev/null 2>&1
 
@@ -145,5 +147,5 @@ ex ()
 # better yaourt colors
 #export YAOURT_COLORS="nb=1:pkg=1:ver=1;32:lver=1;45:installed=1;42:grp=1;34:od=1;41;5:votes=1;44:dsc=0:other=1;35"
 
-echo "Run cheat for alias reminder"
+echo "Run "cheat" for alias reminder"
 export PS1="btw, I use arch\[\e[32m\]:\[\e[m\]\H\W\$"
