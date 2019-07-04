@@ -276,6 +276,7 @@ exec --no-startup-id conky
 exec --no-startup-id firefox
 exec --no-startup-id steam
 exec --no-startup-id itch
+exec --no-startup-id ~/.dotfiles/nitrogenrandom
 
 ######################################################
 # custom bindings
