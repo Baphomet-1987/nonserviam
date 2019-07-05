@@ -6,12 +6,13 @@ makepkg -si
 yay -S i3lock-fancy screenfetch xarchiver deluge freetype2-infinality-remix htop-solarized blueman-applet bluez-utils-compat bluez bluez-utils retroarch pulseaudio-alsa wine winetricks setuptools itch-setup
 sudo systemctl enable bluetooth.service
 ln -sv "~/.dotfiles/i3/config? ~/.config/i3/
-ls -sv "~/.dotfiles/i3status/config" ~/.config/i3status/
-ls -sv "~/.dotfiles/.bash_profile" ~
-ls -sv "~/.dotfiles/.bashrc" ~
-ls -sv "~/.dotfiles/.conkyrc" ~
-ls -sv "~/.dotfiles/.nanorc" ~
-ls -sv "~/.dotfiles/.nvidia-settings-rc" ~
-ls -sv "~/.dotflies/.xinitrc" ~
-ls -sv "~/.dotfiles/Xresources" ~
-
+ln -sv "~/.dotfiles/i3status/config" ~/.config/i3status/
+ln -sv "~/.dotfiles/.bash_profile" ~
+ln -sv "~/.dotfiles/.bashrc" ~
+ln -sv "~/.dotfiles/.conkyrc" ~
+ln -sv "~/.dotfiles/.nanorc" ~
+ln -sv "~/.dotfiles/.nvidia-settings-rc" ~
+ln -sv "~/.dotflies/.xinitrc" ~
+ln -sv "~/.dotfiles/Xresources" ~
+ln -sv "~/.dotfiles/cheat" /usr/bin/
+reboot
