@@ -6,5 +6,5 @@
 while true
 do
 	nitrogen --random --set-zoom-fill /home/caddy.ssd/Pictures/Wallpapers/
-	sleep 600
+	sleep 1800
 done
