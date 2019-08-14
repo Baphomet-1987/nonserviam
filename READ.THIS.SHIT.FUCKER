@@ -1,3 +1,6 @@
+Baphomet Arch Install Script [post install]
+Augustus XIV MMXIX
+
 The following files are specific to my hardware and programs
 and therefore serve no purpose to anyone else except to show 
 how incredibly poor my organizational skills are and damning
@@ -11,6 +14,6 @@ myself.
 .bashrc
 .bais
 
-DO NOT clone and run .bais - that is my install script. You'd 
+DO NOT clone and run .bais - that is my personal install script. You'd 
 be chasing symlinks and a whole pile of installs, better to
-just leave it be.
+just leave it be or modify it for your system.
