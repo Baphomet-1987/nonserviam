@@ -14,4 +14,8 @@ echo -e "\e[1mfullupdate \e[0m- \e[4mrefreshes keyring, system update, orphan re
 
 \e[1mgit push origin master \e[0m- \e[4mpush commit to master branch\e[0m
 
-\e[1mln -s /real/path/ /symlink/path/ \e[0m- \e[4msymlink - links first path to the second"
+\e[1mln -s /real/path/ /symlink/path/ \e[0m- \e[4msymlink - links first path to the second\e[0m
+
+\e[1mpiavpn \e[0m- \e[4mlaunch openvpn with pia "Norway" config\e[0m
+
+\e[1mripsong \e[0m- \e[4mrip audio from given link\e[0m"
