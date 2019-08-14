@@ -96,11 +96,12 @@ alias free='free -m'                      # show sizes in MB
 alias np='nano -w PKGBUILD'
 alias more=less
 alias sweep="sudo pacman -Rsn $(pacman -Qdtq)"
-alias piavpn="sudo openvpn --config ~/Downloads/PIAovpn/Norway.ovpn"
+alias piavpn="sudo openvpn --mute-replay-warnings --config ~/Downloads/PIAovpn/Norway.ovpn"
 alias ucytopia="git clone https://github.com/JimmySnails/Cytopia && cd Cytopia && cmake . && make"
 alias fullupdate="sudo pacman -S archlinux-keyring && sudo pacman -Syyu --verbose && sudo pacman -Rsn $(pacman -Qdtq)"
 alias wifi="sudo wifi-menu"
 alias ripsong="youtube-dl -x --audio-format"
+alias wifi="sudo wifi-menu"
 
 xhost +local:root > /dev/null 2>&1
 
