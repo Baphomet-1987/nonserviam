@@ -1,3 +1,5 @@
+# Baphomet Arch Install Script [post isntall]
+# Augustus, XIV MMXIX
 sudo pacman -S base-devel xorg-xinit dialog xdg-user-dirs nvidia mesa intel vulkan-intel firefox gparted pavucontrol compton steam conky urxvt thunar tumbler mousepad coreutils viewnior mpv ntfs-3g
 xdg-user-dirs-update
 git clone https://aur.archlinux.org/yay.git

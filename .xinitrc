@@ -1,4 +1,5 @@
 #!/bin/sh
+# Baphomet Augustus XIV MMXIX
 xrandr --setprovideroutputsource modesetting NVIDIA-0
 xrandr --auto
 

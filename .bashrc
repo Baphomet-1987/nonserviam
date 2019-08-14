@@ -1,4 +1,4 @@
-#
+# By Baphomet - Augustus, XIV MMXIX
 # ~/.bashrc
 #
 

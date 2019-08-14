@@ -1,8 +1,8 @@
-#
+#Baphomet Augustus XIV MMXIX
 # /home/baphomet/.nvidia-settings-rc
 #
 # Configuration file for nvidia-settings - the NVIDIA X Server Settings utility
-# Generated on Mon May 27 18:18:01 2019
+# Generated on Mon Aug 12 18:10:10 2019
 #
 
 # ConfigProperties:
@@ -19,7 +19,7 @@ Timer = PowerMizer_Monitor_(GPU_0),Yes,1000
 
 # Attributes:
 
-0/SyncToVBlank=1
+0/SyncToVBlank=0
 0/LogAniso=0
 0/FSAA=0
 0/TextureClamping=1
