@@ -64,8 +64,11 @@ set $rofi_selected              $FFFFFF
 
 Set $window_border to pixel 3
 new_window pixel 3
-gaps inner 10
-gaps outer 5
+#gaps inner 10
+#gaps outer 5
+gaps outer 15
+gaps inner 30
+gaps bottom 35
 
 ######################################################
 # Smart borders (draw borders around container only if it is not the only container on this workspace) 
@@ -82,6 +85,16 @@ client.focused          #839496 #839496 #dddddd
 client.focused_inactive #333333 #333333 #888888
 client.unfocused        #333333 #333333 #888888
 client.urgent           #900000 #900000 #ffffff
+
+#####################################################
+# assign special properties
+######################################################
+
+# steam
+for_window [class="^Pavucontrol$"] floating enable
+for_window [class=^Steam$" title="^Steam - Self Updater$"] floating enable
+for_window [class=^Steam$" title="^Settings$"] floating enable
+for_window [class=^Steam$" title="^Screenshot Uploader$"] floating enable
 
 ######################################################
 # Bindings
@@ -269,14 +282,17 @@ bar {
 # execute at boot
 ######################################################
 
-exec --no-startup-id compton
+exec --no-startup-id xcompmgr
 exec --no-startup-id nitrogen --random --set-zoom-fill /home/caddy.ssd/Pictures/Wallpapers
 exec --no-startup-id blueman-applet
-exec --no-startup-id conky
+exec --no-startup-id conky -d
 exec --no-startup-id firefox
 exec --no-startup-id steam
-exec --no-startup-id itch
-exec --no-startup-id ~/.dotfiles/nitrogenrandom
+#exec --no-startup-id itch
+#exec --no-startup-id ~/.dotfiles/nitrogenrandom
+exec --no-startup-id /usr/bin/mpvstartupsound
+exec --no-startup-id "xrandr --dpi 135"
+exec --no-startup-id mumble
 
 ######################################################
 # custom bindings
@@ -292,7 +308,8 @@ bindsym $mod+Shift+x exec --no-startup-id steam
 bindsym $mod+Shift+f exec --no-startup-id thunar
 bindsym $mod+Shift+o exec --no-startup-id libreoffice
 bindsym $mod+Shift+z exec --no-startup-id retroarch
-#bindsym $mod+Shift+v exec --no-startup-id midori
+bindsym $mod+Shift+v exec --no-startup-id hnh
+bindsym $mod+Shift+g exec --no-startup-id nitrogen --random --set-zoom-fill /home/caddy.ssd/Pictures/Wallpapers
 
 # Shutdown, Reboot, Lock Screen, and Logout #657b83
 set $sysmenu "system:  [P]oweroff  re[B]oot  [L]ock  logou[T] "
