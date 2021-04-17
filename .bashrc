@@ -90,18 +90,32 @@ fi
 
 unset use_color safe_term match_lhs sh
 
-alias cp="cp -i"                          # confirm before overwriting something
+#alias cp="cp -i"                          # confirm before overwriting something
 alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
 alias np='nano -w PKGBUILD'
 alias more=less
 alias sweep="sudo pacman -Rsn $(pacman -Qdtq)"
-alias piavpn="sudo openvpn --mute-replay-warnings --config ~/Downloads/PIAovpn/Norway.ovpn"
-alias ucytopia="git clone https://github.com/JimmySnails/Cytopia && cd Cytopia && cmake . && make"
+#alias pirate="sudo systemctl start openvpn-client@Norway"
+#alias nopirate="sudo systemctl stop openvpn-client@Norway"
+#alias thief="nohup qbittorrent-nox & disown"
+#alias ucytopia="git clone https://github.com/JimmySnails/Cytopia && cd Cytopia && cmake . && make"
 alias fullupdate="sudo pacman -S archlinux-keyring && sudo pacman -Syyu --verbose && sudo pacman -Rsn $(pacman -Qdtq)"
-alias wifi="sudo wifi-menu"
-alias ripsong="youtube-dl -x --audio-format"
-alias wifi="sudo wifi-menu"
+#alias wifi="sudo wifi-menu"
+#alias ripsong="youtube-dl -x --audio-format"
+#alias wifi="sudo wifi-menu"
+alias cp="rsync -ah --progress"
+alias homeserver="ssh baphomet@10.147.19.102"
+alias listservices="sudo systemctl --type=service --state=active list-units"
+alias tetheron="sudo easytether-usb && sudo dhcpcd tap-easytether"
+alias homevnc="ssh 10.147.19.75 -L 9901:localhost:5901"
+alias resfix="xrandr --output eDP-1-1 --auto"
+alias wifidown="sudo ip link set wlp60s0 down"
+alias wifiup="sudo ip link set wlp60s0 up"
+alias camspy="mpv av://v4l2:/dev/video0 --profile=low-latency --untimed && s"
+alias pi0="ssh pi@10.147.19.229"
+#alias opensafe="sudo cryptsetup open --type luks safe.img opensafe && sudo mount /dev/mapper/opensafe /home/opensafe"
+#alias shutsafe="sudo umount /home/opensafe && sudo cryptsetup close opensafe"
 
 xhost +local:root > /dev/null 2>&1
 
@@ -148,5 +162,29 @@ ex ()
 # better yaourt colors
 #export YAOURT_COLORS="nb=1:pkg=1:ver=1;32:lver=1;45:installed=1;42:grp=1;34:od=1;41;5:votes=1;44:dsc=0:other=1;35"
 
+neofetch
 echo "Run "cheat" for alias reminder"
-export PS1="btw, I use arch\[\e[32m\]:\[\e[m\]\H\W\$"
+#export PS1="baphomet\[\e[32m\]:\[\e[m\]\H\W\$"
+# proton
+export STEAM_COMPAT_DATA_PATH=$HOME/proton
+# ~/.bashrc
+
+if [ "$TERM" = "linux" ]; then
+    echo -en "\e]P0232323" #black
+    echo -en "\e]P82B2B2B" #darkgrey
+    echo -en "\e]P1D75F5F" #darkred
+    echo -en "\e]P9E33636" #red
+    echo -en "\e]P287AF5F" #darkgreen
+    echo -en "\e]PA98E34D" #green
+    echo -en "\e]P3D7AF87" #brown
+    echo -en "\e]PBFFD75F" #yellow
+    echo -en "\e]P48787AF" #darkblue
+    echo -en "\e]PC7373C9" #blue
+    echo -en "\e]P5BD53A5" #darkmagenta
+    echo -en "\e]PDD633B2" #magenta
+    echo -en "\e]P65FAFAF" #darkcyan
+    echo -en "\e]PE44C9C9" #cyan
+    echo -en "\e]P7E5E5E5" #lightgrey
+    echo -en "\e]PFFFFFFF" #white
+    clear #for background artifacting
+fi
