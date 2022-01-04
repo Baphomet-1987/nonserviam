@@ -1,19 +1,43 @@
-Baphomet Arch Install Script [post install]
-Augustus XIV MMXIX
-
-The following files are specific to my hardware and programs
-and therefore serve no purpose to anyone else except to show 
-how incredibly poor my organizational skills are and damning
-proof that I steal code more often than I put it together 
-myself.
-
-.Xresources
-.xinitrc
-.nvidia-settings-rc
-.bash_profile
-.bashrc
-.bais
-
-DO NOT clone and run .bais - that is my personal install script. You'd 
-be chasing symlinks and a whole pile of installs, better to
-just leave it be or modify it for your system.
+#################################################################################
+#										#
+#		 Baphomet Arch Install Script [post install]			#
+#			     Augustus XIV MMXIX					#
+#										#
+#################################################################################
+#										#
+# {DESCRIPTION}									#
+# The following files are specific to my hardware and programs			#
+# and therefore serve no purpose to anyone else except to show 			#
+# how incredibly poor my organizational skills are and damning			#
+# proof that I steal code more often than I put it together 			#
+# myself.									#
+#										#
+#################################################################################
+#										#
+# {CONTENTS}									#
+# .git										#
+# compton [config folder]							#
+# i3 [config folder]								#
+# i3status [config folder]							#
+# termite [config folder]							#
+# .bais										#
+# .bash_profile									#
+# .conkyrc									#
+# .nanorc									#
+# .nvidia-settings-rc								#
+# .xinitrc									#
+# .Xresources									#
+# cheat [personal cheat sheet script]						#
+# nitrogenrandom [script to shuffle wallpapers]					#
+# READ.THIS.SHIT.FUCKER [Suggested light reading]				#
+#										#
+#################################################################################
+#										#
+# {DISCLAIMER}									#
+# DO NOT clone and run .bais as is - that is my personal install script.	#
+# You'd be chasing symlinks and a whole pile of installs, rather take a 	#
+# look modify it for your system or use it as inspiration for your own 		#
+# script. Feel free to do as you wish with these dots - they are just 		#
+# configs, clone 'em and replace my name with yours, who gives as shit.		#
+#										#
+#################################################################################
